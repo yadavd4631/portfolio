@@ -21,6 +21,7 @@ const AppLayout = () => {
       <Testimonial />
       <About />
       <Contact />
+     
       <Footer />
     </RootLayout>
   );

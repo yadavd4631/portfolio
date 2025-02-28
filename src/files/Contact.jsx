@@ -12,59 +12,63 @@ const Contact = () => {
     message: "",
   });
 
+  // Handle form input changes
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  // Handle form submission
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formDataObj = new FormData(event.target);
+
+    formDataObj.append("access_key", "4c249a78-0c5f-49cf-b977-9250a44a6137");
+
+    const object = Object.fromEntries(formDataObj);
+    const json = JSON.stringify(object);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      }).then((res) => res.json());
+
+      if (res.success) {
+        console.log("Success", res);
+        // Reset the form after successful submission
+        setFormData({
+          name: "",
+          age: "",
+          gender: "",
+          location: "",
+          message: "",
+        });
+        setShowForm(false);
+      } else {
+        console.error("Error:", res.message);
+      }
+    } catch (error) {
+      console.error("Submission failed", error);
+    }
+  };
+
+  // Open form
   const handleButtonClick = () => {
     setShowForm(true);
   };
 
+  // Close form
   const handleCloseForm = () => {
     setShowForm(false);
   };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-  
-    // Send form data to the backend API
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-  
-      const result = await response.json();
-  
-      if (response.ok) {
-        // Handle success
-        console.log(result.message);
-        alert("Thank you for your message! We'll get in touch soon.");
-      } else {
-        // Handle errors
-        console.error(result.message);
-        alert("There was an issue with your submission. Please try again.");
-      }
-    } catch (error) {
-      console.error("Error sending form data:", error);
-      alert("There was an error. Please try again later.");
-    }
-  
-    // Reset the form
-    setFormData({
-      name: "",
-      age: "",
-      gender: "",
-      location: "",
-      message: "",
-    });
-    setShowForm(false);
-  };
-  
 
   return (
     <div id="contact" className="py-16 pt-12 lg:py-24 lg:pt-20 relative z-10">
@@ -107,10 +111,7 @@ const Contact = () => {
           <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
             <div className="bg-white rounded-xl p-8 w-[90%] max-w-md">
               <h3 className="text-lg font-semibold mb-4">Contact Me</h3>
-              <form
-                onSubmit={handleSubmit}
-                className="flex flex-col gap-4"
-              >
+              <form onSubmit={onSubmit} className="flex flex-col gap-4">
                 <input
                   type="text"
                   name="name"

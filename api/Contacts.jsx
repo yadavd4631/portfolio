@@ -26,13 +26,13 @@ const Contacts = () => {
   };
 
   return (
-    <div className="Contact">
+    <div className="">
       <div className="contact-title">
-        <h1>Get in touch</h1>
+        <h1 className="">Get in touch</h1>
       </div>
       <div className="contact-section">
         <div className="contact-left">
-          <h1>Let's talk</h1>
+          <h1>Let's create something amazing together</h1>
           <p>
             I'm currently avaliable to take on new projects, so feel free to
             send me a message about anything that you want me to work on. You
@@ -53,7 +53,7 @@ const Contacts = () => {
             </div>
           </div>
         </div>
-        <form onSubmit={onsubmit} className="Contact-right">
+        <form onSubmit={onSubmit} className="Contact-right">
           <label htmlFor="">Your Name</label>
           <input type="text" placeholder="Enter your name" name="name" />
           <label htmlFor="">Your Email</label>
@@ -66,7 +66,7 @@ const Contacts = () => {
             rows="8"
             placeholder="Enter your message"
           ></textarea>
-          <button className="contact-sub">Sumbit now</button>
+          <button className= "">Sumbit now</button>
         </form>
       </div>
     </div>
