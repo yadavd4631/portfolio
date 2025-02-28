@@ -4,7 +4,7 @@ A modern, responsive, and minimal portfolio website built using React, Tailwind 
 =======
 # My Portfolio
 
-Welcome to my personal portfolio! This repository showcases my skills, projects, and experience in Web development, AI, robotics, etc. Below you'll find a collection of my best works, along with the technologies I've used to create them.
+Welcome to my personal portfolio! This repository showcases my skills, projects, and experience in Web development. Below you'll find a collection of my best works, along with the technologies I've used to create them.
 
 ## About Me
 
@@ -21,7 +21,7 @@ Hi there! I'm Deepak Yadav, a passionate Developer, engineer, Athelete. I love s
 
 ### Contact Me
 
-- Email: singhpriyanshu086@gmail.com
+- Email: yadavd4631@gmail.com
 - LinkedIn: [@yadavd4631](https://www.linkedin.com/in/yadavd4631/)
 - GitHub: [@Deepak12041999](https://github.com/Deepak12041999)
 
