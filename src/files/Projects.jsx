@@ -1,7 +1,7 @@
 import React from "react";
 import netflixGPT from "../../public/assets/images/NetflixGPT.png";
 import weather from "../../public/assets/images/weather-app.png";
-import covid19Detection from "../../public/assets/images/Covid19.png";
+import cal from "../../public/assets/images/cal.png";
 import checkCircleIcon from "../../public/assets/icons/check-circle.svg";
 import arrowUpRightIcon from "../../public/assets/icons/arrow-up-right-project.svg";
 import Card from "../components/Card";
@@ -16,25 +16,25 @@ const portfolioProjects = [
       { title: "Multiple Language Support" },
       { title: "Responsive & Optimized for mobile" },
     ],
-    link: "https://github.com/Deepak12041999",
+    link: "https://netflix-gpt-68fdf.web.app/",
     image: netflixGPT,
   },
   {
-    company: "Project Exhibition VIT",
+    company: "JavaScript Calculator UI & Logic",
     year: "2024",
-    title: "Covid 19, Pneumonia Detection using AI",
+    title: "User-Friendly UI – Clean and intuitive design using HTML & CSS.",
     results: [
       {
         title:
-          "Intelligent X-ray Analyzer for COVID-19 and Pneumonia Detection",
+          "Basic Arithmetic Operations – Supports addition, subtraction, multiplication, and division",
       },
-      { title: "Web-Based Diagnostic System for Lung Infections" },
+      { title: "Responsive Design – Works on all screen sizes." },
       {
-        title: "Enhanced Customer Experience with Built-in Live Camera Support",
+        title: "Keyboard Support – Perform calculations using the keyboard",
       },
     ],
-    link: "https://github.com/Deepak12041999",
-    image: covid19Detection,
+    link: "https://simpecalcultor.netlify.app/",
+    image: cal,
   },
   {
     company: "weather",

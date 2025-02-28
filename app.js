@@ -9,7 +9,7 @@ import Testimonial from "./src/files/Testimonials";
 import About from "./src/files/About";
 import Contact from "./src/files/Contact";
 import Footer from "./src/files/Footer";
-import Contacts from "./api/Contacts";
+
 
 const AppLayout = () => {
   return (

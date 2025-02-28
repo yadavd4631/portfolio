@@ -42,18 +42,6 @@ const toolBoxItems = [
     title: "Github",
     iconType: gitHubIcon,
   },
-  {
-    title: "Nodejs",
-    iconType: NodejsIcon,
-  },
-  {
-    title: "Expressjs",
-    iconType: ExpressjsIcon,
-  },
-  {
-    title: "Mongodb",
-    iconType: MongodbIcon,
-  },
 ];
 
 const hobbies = [
