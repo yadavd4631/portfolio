@@ -8,9 +8,10 @@ import Card from "../components/Card";
 
 const portfolioProjects = [
   {
-    company: "Netflix",
+    company: "Netflix+GPT ()",
     year: "2025",
-    title: "Netflix with GPT in Built",
+    title:
+      "Netflix+GPT is an AI-powered movie recommendation system using GPT. Currently, I am working on implementing real-time suggestions and enhancing the user experience.",
     results: [
       { title: "Added Built in AI Model for Movie Suggetion" },
       { title: "Multiple Language Support" },

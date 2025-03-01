@@ -6,13 +6,14 @@ const footerLink = [
     href: "https://x.com/yadavd4631",
   },
   {
+    title: "Linkedin",
+    href: "www.linkedin.com/in/yadavd4631",
+  },
+  {
     title: "GitHub",
     href: "https://github.com/Deepak12041999",
   },
-  {
-    title: "LinkedIN",
-    href: "www.linkedin.com/in/yadavd4631",
-  },
+  
   {
     title: "Instagram",
     href: "https://www.instagram.com/deepak__yadav07_/",
