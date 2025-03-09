@@ -11,7 +11,7 @@ const footerLink = [
   },
   {
     title: "GitHub",
-    href: "https://github.com/Deepak12041999",
+    href: "https://github.com/yadavd4631",
   },
   
   {
